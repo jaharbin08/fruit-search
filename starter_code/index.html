@@ -10,19 +10,24 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- partial:index.partial.html -->
-    <div class="search-container">
-      <input
-        type="search"
-        name="q"
-        id="fruit"
-        list="suggestions"
-        placeholder="Search fruit 🍎"
-      />
-      <!-- <button id="submit">Search</button> -->
-      <datalist class="suggestions" id="suggestions"> </datalist>
-    </div>
-    <!-- partial -->
+    <main>
+      <div class="search-container">
+        <input
+          type="search"
+          name="q"
+          id="fruit"
+          list="suggestions"
+          placeholder="Search fruit 🍎"
+        />
+        <datalist class="suggestions" id="suggestions"> </datalist>
+      </div>
+    </main>
+    <footer>
+      <h4>
+        Made by
+        <a href="https://github.com/jaharbin08" target="_blank">John Harbin</a>
+      </h4>
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>

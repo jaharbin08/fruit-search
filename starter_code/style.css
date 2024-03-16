@@ -2,12 +2,37 @@
   box-sizing: border-box;
 }
 
-:focus {
-  /* TODO */
+input:focus {
+  outline: double #1020aa 0.2em;
 }
 
 body {
-  /* TODO */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(90deg, #99999b, #213799);
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  color: white;
+}
+
+footer {
+  flex: 0;
+  color: white;
+  font-size: 0.8em;
 }
 
 input {
@@ -15,32 +40,6 @@ input {
 }
 
 .search-container {
-  /* TODO */
-}
-.search-container input,
-.search-container .suggestions {
-  /* TODO */
-}
-.search-container input {
-  /* TODO */
-}
-.search-container .suggestions {
-  /* TODO */
-}
-
-ul {
-  /* TODO */
-}
-ul.has-suggestions {
-  /* TODO */
-}
-ul li {
-  /* TODO */
-}
-ul li:hover {
-  /* TODO */
-}
-
-input {
-  /* TODO */
+  justify-content: center;
+  align-content: center;
 }

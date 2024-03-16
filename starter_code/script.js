@@ -115,5 +115,10 @@ input.addEventListener("keyup", searchHandler);
 suggestions.addEventListener("click", useSuggestion);
 input.addEventListener("change", (e) => {
   e.preventDefault();
-  window.location.href = `https://www.google.com/search?q=${input.value}`;
+  if (e.target.value === "") return;
+  fruit.filter((el) =>
+    el.toLowerCase() === e.target.value.toLowerCase()
+      ? (window.location.href = `https://www.google.com/search?q=${el}`)
+      : null
+  );
 });
